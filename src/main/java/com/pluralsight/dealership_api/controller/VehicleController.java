@@ -42,4 +42,12 @@ public class VehicleController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
+
+    @DeleteMapping("/{vin}")
+    public ResponseEntity<Void> deleteVehicle(@PathVariable int vin){
+        if (vehicleService.deleteVehicle(vin)){
+            return ResponseEntity.noContent().build();
+        }
+        return ResponseEntity.notFound().build();
+    }
 }
