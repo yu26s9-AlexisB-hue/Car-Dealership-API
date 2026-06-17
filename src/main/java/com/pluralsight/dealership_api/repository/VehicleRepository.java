@@ -10,4 +10,5 @@ import java.util.List;
 public interface VehicleRepository extends JpaRepository<Vehicle, Integer> {
 
     List<Vehicle> findByPriceBetween(double minPrice, double maxPrice);
+    List <Vehicle> findByMake(String make);
 }

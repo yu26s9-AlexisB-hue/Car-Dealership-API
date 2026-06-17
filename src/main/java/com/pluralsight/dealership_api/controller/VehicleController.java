@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/vehicle")
+@RequestMapping("/api/vehicles")
 public class VehicleController {
 
     private final VehicleService vehicleService;
@@ -33,6 +33,11 @@ public class VehicleController {
     @GetMapping("/price")
     public ResponseEntity<List<Vehicle>> getVehicleByPrice(@RequestParam double minPrice, @RequestParam double maxPrice){
         return ResponseEntity.ok(vehicleService.getVehicleByPrice(minPrice, maxPrice));
+    }
+
+    @GetMapping("/make")
+    public ResponseEntity<List<Vehicle>> getVehicleByMake(@PathVariable String make){
+        return ResponseEntity.ok(vehicleService.getVehicleByMake(make));
     }
 
     @PostMapping

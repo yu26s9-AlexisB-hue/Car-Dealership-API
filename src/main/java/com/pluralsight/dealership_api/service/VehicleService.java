@@ -27,6 +27,10 @@ public class VehicleService {
         return vehicleRepository.findByPriceBetween(minPrice, maxPrice);
     }
 
+    public List<Vehicle> getVehicleByMake(String make){
+        return vehicleRepository.findByMake(make);
+    }
+
     public Vehicle createVehicle(Vehicle vehicle){
         return vehicleRepository.save(vehicle);
     }
