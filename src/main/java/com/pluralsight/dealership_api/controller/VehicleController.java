@@ -30,6 +30,11 @@ public class VehicleController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @GetMapping("/price")
+    public ResponseEntity<List<Vehicle>> getVehicleByPrice(@RequestParam double minPrice, @RequestParam double maxPrice){
+        return ResponseEntity.ok(vehicleService.getVehicleByPrice(minPrice, maxPrice));
+    }
+
     @PostMapping
     public ResponseEntity<Vehicle> createVehicle(@RequestBody Vehicle vehicle){
         Vehicle created = vehicleService.createVehicle(vehicle);

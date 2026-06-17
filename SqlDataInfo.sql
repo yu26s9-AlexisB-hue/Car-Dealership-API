@@ -16,24 +16,25 @@ color varchar(30),
 odometer int,
 price decimal(10,2));
 */
+
 INSERT INTO vehicle
-(vin, year, make, model, vehicle_type, color, odometer, price)
+( year, make, model, vehicle_type, color, odometer, price)
 VALUES
-(38172, 2024, 'Honda', 'Civic', 'Sedan', 'Blue', 15234, 24500.00),
-(57390, 2023, 'Chevrolet', 'Malibu', 'Sedan', 'White', 22109, 27995.00),
-(68412, 2026, 'Tesla', 'Model 3', 'Sedan', 'Silver', 1200, 45999.99),
-(71543, 2023, 'Hyundai', 'Tucson', 'SUV', 'Gray', 18765, 31250.00),
-(82654, 2024, 'Kia', 'Sportage', 'SUV', 'Green', 9320, 29875.50),
-(93765, 2025, 'Nissan', 'Altima', 'Sedan', 'Black', 6543, 28640.00),
-(14876, 2023, 'Jeep', 'Wrangler', 'SUV', 'Orange', 11098, 42995.00),
-(25987, 2024, 'Subaru', 'Outback', 'Wagon', 'Blue', 13455, 36780.25),
-(47109, 2018, 'Toyota', 'Corolla', 'Sedan', 'Silver', 88432, 14995.00),
-(58210, 2015, 'Ford', 'Fusion', 'Sedan', 'Gray', 121093, 10995.99),
-(69321, 2012, 'Honda', 'Accord', 'Sedan', 'Black', 159332, 8995.00),
-(70432, 2009, 'Chevrolet', 'Tahoe', 'SUV', 'White', 201442, 11995.50),
-(81543, 2017, 'Nissan', 'Rogue', 'SUV', 'Red', 97321, 16450.00),
-(92654, 2010, 'Dodge', 'Charger', 'Sedan', 'Blue', 188321, 7999.99),
-(13765, 2019, 'Mazda', 'CX-5', 'SUV', 'Gray', 65422, 21995.00),
-(24876, 2016, 'Volkswagen', 'Jetta', 'Sedan', 'Black', 112943, 12499.95),
-(35987, 2014, 'GMC', 'Sierra', 'Truck', 'White', 143298, 18499.00),
-(46098, 2021, 'Audi', 'A4', 'Sedan', 'Silver', 42110, 32995.75);
+-- ( 2025, 'Honda', 'Civic', 'Sedan', 'Blue', 3234, 54500.00)
+( 2023, 'Chevrolet', 'Malibu', 'Sedan', 'White', 22109, 27995.00),
+( 2026, 'Tesla', 'Model 3', 'Sedan', 'Silver', 1200, 45999.99),
+( 2023, 'Hyundai', 'Tucson', 'SUV', 'Gray', 18765, 31250.00),
+(2024, 'Kia', 'Sportage', 'SUV', 'Green', 9320, 29875.50),
+(2025, 'Nissan', 'Altima', 'Sedan', 'Black', 6543, 28640.00),
+(2023, 'Jeep', 'Wrangler', 'SUV', 'Orange', 11098, 42995.00),
+(2024, 'Subaru', 'Outback', 'Wagon', 'Blue', 13455, 36780.25),
+(2018, 'Toyota', 'Corolla', 'Sedan', 'Silver', 88432, 14995.00),
+(2015, 'Ford', 'Fusion', 'Sedan', 'Gray', 121093, 10995.99),
+(2012, 'Honda', 'Accord', 'Sedan', 'Black', 159332, 8995.00),
+(2009, 'Chevrolet', 'Tahoe', 'SUV', 'White', 201442, 11995.50),
+(2017, 'Nissan', 'Rogue', 'SUV', 'Red', 97321, 16450.00),
+(2010, 'Dodge', 'Charger', 'Sedan', 'Blue', 188321, 7999.99),
+(2019, 'Mazda', 'CX-5', 'SUV', 'Gray', 65422, 21995.00),
+(2016, 'Volkswagen', 'Jetta', 'Sedan', 'Black', 112943, 12499.95),
+(2014, 'GMC', 'Sierra', 'Truck', 'White', 143298, 18499.00),
+(2021, 'Audi', 'A4', 'Sedan', 'Silver', 42110, 32995.75);

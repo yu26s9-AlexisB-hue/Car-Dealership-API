@@ -23,6 +23,10 @@ public class VehicleService {
         return vehicleRepository.findById(vin);
     }
 
+    public List<Vehicle> getVehicleByPrice(double minPrice, double maxPrice){
+        return vehicleRepository.findByPriceBetween(minPrice, maxPrice);
+    }
+
     public Vehicle createVehicle(Vehicle vehicle){
         return vehicleRepository.save(vehicle);
     }
