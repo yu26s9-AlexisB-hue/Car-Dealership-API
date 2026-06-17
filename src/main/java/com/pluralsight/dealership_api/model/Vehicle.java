@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 public class Vehicle {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int vin;
@@ -16,6 +16,10 @@ public class Vehicle {
     private String color;
     private int odometer;
     private double price;
+
+    public Vehicle(){
+
+    }
 
     public Vehicle(int vin, int year, String make, String model, String vehicleType, String color, int odometer, double price) {
         this.vin = vin;
