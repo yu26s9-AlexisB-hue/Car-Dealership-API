@@ -3,12 +3,12 @@ package com.pluralsight.dealership_api.model;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "vehicle")
 public class Vehicle {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int vin;
-
+    private Integer vin;
     private int year;
     private String make;
     private String model;
@@ -18,10 +18,9 @@ public class Vehicle {
     private double price;
 
     public Vehicle(){
-
     }
 
-    public Vehicle(int vin, int year, String make, String model, String vehicleType, String color, int odometer, double price) {
+    public Vehicle(Integer vin, int year, String make, String model, String vehicleType, String color, int odometer, double price) {
         this.vin = vin;
         this.year = year;
         this.make = make;
@@ -32,11 +31,11 @@ public class Vehicle {
         this.price = price;
     }
 
-    public int getVin() {
+    public Integer getVin() {
         return vin;
     }
 
-    public void setVin(int vin) {
+    public void setVin(Integer vin) {
         this.vin = vin;
     }
 
